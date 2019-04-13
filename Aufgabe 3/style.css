@@ -1,1 +1,12 @@
 body { background:#58D3F7 ;}
+section { background: #2EFE9A; width: 85%} 
+img { border-radius: 85% }
+img { width: 300}
+img { height: 600}
+img { border: #000000}
+img { border: 5px solid}
+p { color: #FA5858}
+p { font-size: 1,5em}
+p { font-family: Arial, Helvetica, sans-serif}
+main { font-family:Georgia, Times, 'Times New Roman', serif}
+body { font-family: Georgia, 'Times New Roman', Times, serif}
