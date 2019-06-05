@@ -5,6 +5,7 @@ window.onload = function () {
     document.getElementById("Taste 2").addEventListener("click", ChangeText2);
     window.alert("Einmal klicken um zu starten");
     document.getElementById("Taste 3").addEventListener("click", ChangeNumbers);
+    newelements();
     console.log("Meine Seite");
 };
 // der Button verändert sich//

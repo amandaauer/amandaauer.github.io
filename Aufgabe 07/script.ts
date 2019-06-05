@@ -6,6 +6,7 @@ window.onload = function () {
     document.getElementById("Taste 2").addEventListener("click", ChangeText2);
     window.alert("Einmal klicken um zu starten");
     document.getElementById ("Taste 3").addEventListener ("click", ChangeNumbers);
+    newelements();
 console.log("Meine Seite")
     
 }
@@ -47,5 +48,6 @@ function ChangeNumbers(){
     console.log( no1+no2);
     console.log( word1+word2);
     console.log( no2+word2);
+
 }
 //# sourceMappingURL=script.js.map
