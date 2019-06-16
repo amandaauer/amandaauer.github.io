@@ -8,7 +8,7 @@ let monsterName = ["Hexe", "Mammut", "Spinne", "Drache", "Frosch"]; // length = 
 let suffix = [" vom Dorf", "des Schreckens", "mit Pilz", " mit Rheuma", " des Verderbens", " der Zerstörung"]; // length = 6, da hier 6 Einträge sind. Von 0-5.
 let monsterModifers = ["ohne Sinn", "Trinker", "ohne Leben", "hat keine Ahnung", "Hass", "Müde", "Verwirrt", "Lebensscheu", "Bipolar", "Hat Schnupfen", "Dumm"]; // Eine Reihe von zufälligen "Verstärkern" für das Monster.
 let monsterWeapon = ["Schwert", "Hammer", "Axt", "Pistole", "Wasser"];
-let Images = ["Bilder/Drache.jpg", "Bilder/hexe.jpg", "Bilder/monster.jpg"];
+let Images = ["imgs/Drache.jpg", "imgs/hexe.jpg", "imgs/monster.jpg"];
 let monsterArray = []; // Das Haupt-Array wurde erstellt und initialisiert!
 //console.log(monsterArray);
 // ----------- Funktionen ----------- //
