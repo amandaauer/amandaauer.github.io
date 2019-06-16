@@ -20,9 +20,6 @@ window.onload = function () {
     console.log("" + document.getElementById("monsterSpawner").innerHTML);
 };
 console.log(document.getElementById("monsterSpawner").innerHTML);
-function newFunction() {
-    return "Bilder/hexe.jpg";
-}
 function generateMonster() {
     let newMonsterWeapon = generatedMonsterWeapon();
     let newImage;

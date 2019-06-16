@@ -34,9 +34,6 @@ window.onload = function () {
 
 console.log(document.getElementById("monsterSpawner").innerHTML);
 
-function newFunction() {
-    return "Bilder/hexe.jpg";
-}
 
 function generateMonster() {
     let newMonsterWeapon: string = generatedMonsterWeapon();
