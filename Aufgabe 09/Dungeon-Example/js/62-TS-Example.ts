@@ -49,8 +49,9 @@ function generateMonster() {
         monsterExperience: newMonsterXP,
         monsterModifier: newMonsterModifier,
     };
-    monsterArray.push( newMonster); // Monster wird erst in diesem Schritt zu dem Array hinzugefügt 
-    if(monsterArray.length !=0){
+    monsterArray.push(newMonster); // Monster wird erst in diesem Schritt zu dem Array hinzugefügt 
+    if(monsterArray.length !=0)
+    {
         console.log(monsterArray[monsterArray.length - 1].monsterExperience);
     }
 }
@@ -66,28 +67,28 @@ function updateHTML(){
 }
 function monsterGenerateHTMLAII()
 {
-    for(let i = 1; i <= monsterArray.length; i++)
+    for(let i: number=1; i <= monsterArray.length; i++)
     {
-        monsterGenerateHTMLAII(i)
         console.log("Hierbei wurde"+i+"Monster generiert");
+        monsterGenerateHTML(i);
     }
 }
 function clearMonsterCell(){
-    let MonsterCell= document.getElementById("monsterHoldingCell");
-    if (MonsterCell.hasChildNodes){//Kindelement
-        while (MonsterCell.firstChild){
-            MonsterCell.removeChild(MonsterCell.firstChild); //löschen der Kindelemente
+    let monsterCell= document.getElementById("monsterHoldingCell");
+    if (monsterCell.hasChildNodes){//Kindelement
+        while (monsterCell.firstChild){
+            monsterCell.removeChild(monsterCell.firstChild); //löschen der Kindelemente
 
         }
 
     }
-    console.log("KIndelement des MonsterCell wurde entfernt")
+    console.log("KIndelement des MonsterCell wurde entfernt");
 }
 function getMonsterCount(){
     return monsterArray.length;
 }
 // Generiert HTML-Elemente, welche dann einem Element untergeordnet werden. Erzeugt ebenfalls einen Event-Listener auf dem Button.
-function monsterGenerateHTML(count: number) {
+function monsterGenerateHTML(count:number) {
     let holdingDiv: HTMLElement = document.createElement("div"); // Erstelle ein neues HTML-Element vom typ <div>. Es ist jedoch noch nicht zu sehen!
     holdingDiv.setAttribute("id", "monster" + count); // Die ID jedes neu-erstellten Monsters entspricht der aktuellen Array-Länge.
     holdingDiv.setAttribute("class", "monster"); // Klasse für Visuals.
@@ -187,9 +188,8 @@ function fightMonster(_index: number)
     console.log("Spieler kämpft gegen Monster und gewinnt!"); // Ohne Logik mit if/else ist so etwas wie ein Kampf nicht leicht umzusetzen.
     console.log("Das Monster weigert sich zu verschwinden."); // Wird nächste Stunde erweitert.
     playerXP += monsterArray[_index - 1].monsterExperience; // _index ist in diesem Fall die Länge des Arrays - allerdings zählt der Computer beginnend von null, nicht eins! Deshalb _index-1.
-    document.getElementById("monsterHoldingCell").innerHTML = "";
+    updatePlayerLevel();
     monsterArray.splice(_index - 1, 1);
-    updatePlayerLevel;
     updateHTML();
 }
 // Aufgerufen, um das HTML-Element, welches das Spieler-Level darstellt, zu erneuern.

@@ -49,15 +49,15 @@ function updateHTML() {
 }
 function monsterGenerateHTMLAII() {
     for (let i = 1; i <= monsterArray.length; i++) {
-        monsterGenerateHTMLAII();
         console.log("Hierbei wurde" + i + "Monster generiert");
+        monsterGenerateHTML(i);
     }
 }
 function clearMonsterCell() {
-    let MonsterCell = document.getElementById("monsterHoldingCell");
-    if (MonsterCell.hasChildNodes) { //Kindelement
-        while (MonsterCell.firstChild) {
-            MonsterCell.removeChild(MonsterCell.firstChild); //löschen der Kindelemente
+    let monsterCell = document.getElementById("monsterHoldingCell");
+    if (monsterCell.hasChildNodes) { //Kindelement
+        while (monsterCell.firstChild) {
+            monsterCell.removeChild(monsterCell.firstChild); //löschen der Kindelemente
         }
     }
     console.log("KIndelement des MonsterCell wurde entfernt");
@@ -152,9 +152,8 @@ function fightMonster(_index) {
     console.log("Spieler kämpft gegen Monster und gewinnt!"); // Ohne Logik mit if/else ist so etwas wie ein Kampf nicht leicht umzusetzen.
     console.log("Das Monster weigert sich zu verschwinden."); // Wird nächste Stunde erweitert.
     playerXP += monsterArray[_index - 1].monsterExperience; // _index ist in diesem Fall die Länge des Arrays - allerdings zählt der Computer beginnend von null, nicht eins! Deshalb _index-1.
-    document.getElementById("monsterHoldingCell").innerHTML = "";
+    updatePlayerLevel();
     monsterArray.splice(_index - 1, 1);
-    updatePlayerLevel;
     updateHTML();
 }
 // Aufgerufen, um das HTML-Element, welches das Spieler-Level darstellt, zu erneuern.
