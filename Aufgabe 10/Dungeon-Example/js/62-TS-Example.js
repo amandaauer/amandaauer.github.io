@@ -13,7 +13,7 @@ let monsterName = ["Osterhase", "Drache", "Gummibär", "Teufel", "Ungeheuer", "A
 let suffix = ["aus Fuwa", "mit Spliss", " mit Schnupfen", " die Erbarmungslos", " die Rächerin", " aus der Tiefe", " aus dem Meer", " ohne Gnade"]; // length = 8, da hier 8 Einträge sind. Von 0-7.
 let monsterModifers = ["Fett", "hat kein Leben", "unsterblich", "unzerstörbar", "teuflisch", "aufmerksam", "langsam", "stark", "flink", "liebevoll", "kugelrund"]; // Eine Reihe von zufälligen Verstärkern/Zusätzen für das Monster. length = 8, da 8 Einträge. Von 0-7.
 let monsterWeapon = ["unsterblich", "Hammer", "Wasserbombe", "Spritzpistole", "Säge", "Axt", "Killerblick", "Berührung des Todes"]; // length = 8, da 8 Einträge. Von 0-7.
-let Images = ["imgs/hexe.jpg", "imgs/monster.jpg", "imgs/drache.jpg"]; // length = 3, da 3 Einträge. Von 0-2.
+let Images = ["imgs/hexe.jpg", "imgs/monster.jpg", "imgs/Drache.jpg"]; // length = 3, da 3 Einträge. Von 0-2.
 // -- Initialisierung für viele/variable Anzahl an Monster --
 let monsterArray = []; // Das Haupt-Array wurde erstellt und initialisiert!
 console.log(monsterArray); // Gebe das Monster-Array einmal zu beginn aus. Es sollte leer sein.

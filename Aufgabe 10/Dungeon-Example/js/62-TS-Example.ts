@@ -32,7 +32,7 @@ let suffix : string[] = ["aus Fuwa", "mit Spliss", " mit Schnupfen", " die Erbar
 let monsterModifers : string[] = ["Fett", "hat kein Leben", "unsterblich", "unzerstörbar", "teuflisch", "aufmerksam", "langsam", "stark", "flink", "liebevoll", "kugelrund"]; // Eine Reihe von zufälligen Verstärkern/Zusätzen für das Monster. length = 8, da 8 Einträge. Von 0-7.
 
 let monsterWeapon : string[] = ["unsterblich", "Hammer", "Wasserbombe", "Spritzpistole", "Säge", "Axt", "Killerblick", "Berührung des Todes"] // length = 8, da 8 Einträge. Von 0-7.
-let Images : string[] = ["imgs/hexe.jpg", "imgs/monster.jpg", "imgs/drache.jpg"] // length = 3, da 3 Einträge. Von 0-2.
+let Images : string[] = ["imgs/hexe.jpg", "imgs/monster.jpg", "imgs/Drache.jpg"] // length = 3, da 3 Einträge. Von 0-2.
 
 
 // -- Initialisierung für viele/variable Anzahl an Monster --
