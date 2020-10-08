@@ -1,7 +1,7 @@
 // Aufgabe 1//
-let nn = [];
+let nn = [0];
 var x;
-Check = window.prompt('Geben Sie Ihren Namen ein', '');
+const Check = window.prompt('Geben Sie Ihren Namen ein', '');
 if (Check == '') {
     alert('Keine Angabe');
 }
@@ -10,6 +10,8 @@ else {
     console.log(nn[0]);
 }
 window.addEventListener("load", function () {
-    document.getElementById("Erster Schritt").innerHTML = nn[0];
+    const newLocal = document.getElementById("ErsterSchritt");
+    let newLocal_1 = newLocal.innerHTML;
+    newLocal_1 = nn[0];
 });
 //# sourceMappingURL=script.js.map
