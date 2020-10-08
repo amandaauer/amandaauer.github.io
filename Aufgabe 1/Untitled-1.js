@@ -1,8 +1,7 @@
 // Aufgabe 1//
 console.log("Handy1");
 window.onload = function () {
-    document.getElementById("Taste 1").addEventListener("click", ChangeText1);
-    document.getElementById("Taste 2").addEventListener("click", ChangeText2);
+    
     window.alert("Einmal klicken um zu starten");
     document.getElementById("Taste 3").addEventListener("click", ChangeNumbers);
     newelements();
